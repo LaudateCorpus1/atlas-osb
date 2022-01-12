@@ -18,7 +18,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/drewolson/testflight v1.0.0 // indirect
 	github.com/go-git/go-git/v5 v5.4.2
-	github.com/goccy/go-yaml v1.8.9
+	github.com/goccy/go-yaml v1.9.5
 	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/google/go-cmp v0.5.4 // indirect
 	github.com/google/go-querystring v1.1.0
