@@ -19,14 +19,12 @@ require (
 	github.com/drewolson/testflight v1.0.0 // indirect
 	github.com/go-git/go-git/v5 v5.4.2
 	github.com/goccy/go-yaml v1.8.9
-	github.com/golang/protobuf v1.4.2 // indirect
-	github.com/google/go-cmp v0.5.4 // indirect
 	github.com/google/go-querystring v1.1.0
 	github.com/gorilla/mux v1.8.0
 	github.com/huandu/xstrings v1.3.2 // indirect
 	github.com/mongodb-forks/digest v1.0.2
-	github.com/onsi/ginkgo v1.10.3
-	github.com/onsi/gomega v1.7.1
+	github.com/onsi/ginkgo v1.16.4
+	github.com/onsi/gomega v1.18.1
 	github.com/pborman/uuid v1.2.0 // indirect
 	github.com/pivotal-cf-experimental/cf-test-helpers v0.0.0-20170428144005-e56b6ec41da9
 	github.com/pivotal-cf/brokerapi v5.1.0+incompatible
