@@ -19,14 +19,12 @@ require (
 	github.com/drewolson/testflight v1.0.0 // indirect
 	github.com/go-git/go-git/v5 v5.4.2
 	github.com/goccy/go-yaml v1.8.9
-	github.com/golang/protobuf v1.4.2 // indirect
-	github.com/google/go-cmp v0.5.4 // indirect
 	github.com/google/go-querystring v1.1.0
 	github.com/gorilla/mux v1.8.0
 	github.com/huandu/xstrings v1.3.2 // indirect
 	github.com/mongodb-forks/digest v1.0.2
-	github.com/onsi/ginkgo v1.10.3
-	github.com/onsi/gomega v1.7.1
+	github.com/onsi/ginkgo v1.16.4
+	github.com/onsi/gomega v1.24.0
 	github.com/pborman/uuid v1.2.0 // indirect
 	github.com/pivotal-cf-experimental/cf-test-helpers v0.0.0-20170428144005-e56b6ec41da9
 	github.com/pivotal-cf/brokerapi v5.1.0+incompatible
@@ -35,8 +33,6 @@ require (
 	go.mongodb.org/atlas v0.7.2
 	go.mongodb.org/mongo-driver v1.5.1
 	go.uber.org/zap v1.16.0
-	golang.org/x/mod v0.4.0 // indirect
-	golang.org/x/tools v0.0.0-20210101214203-2dba1e4ea05c // indirect
 	gopkg.in/yaml.v2 v2.4.0
 	sigs.k8s.io/go-open-service-broker-client/v2 v2.0.0-20200706192557-3a0d26033ee6
 )
