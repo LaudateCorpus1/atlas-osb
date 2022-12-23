@@ -19,8 +19,6 @@ require (
 	github.com/drewolson/testflight v1.0.0 // indirect
 	github.com/go-git/go-git/v5 v5.4.2
 	github.com/goccy/go-yaml v1.9.8
-	github.com/golang/protobuf v1.4.2 // indirect
-	github.com/google/go-cmp v0.5.4 // indirect
 	github.com/google/go-querystring v1.1.0
 	github.com/gorilla/mux v1.8.0
 	github.com/huandu/xstrings v1.3.2 // indirect
@@ -33,7 +31,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/sethvargo/go-password v0.2.0
 	go.mongodb.org/atlas v0.7.2
-	go.mongodb.org/mongo-driver v1.5.1
+	go.mongodb.org/mongo-driver v1.11.1
 	go.uber.org/zap v1.16.0
 	gopkg.in/yaml.v2 v2.4.0
 	sigs.k8s.io/go-open-service-broker-client/v2 v2.0.0-20200706192557-3a0d26033ee6
