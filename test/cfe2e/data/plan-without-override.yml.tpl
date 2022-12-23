@@ -1,5 +1,5 @@
-name: multi-region-us
-description: "This is sample Plan, it extends the 'Basic Plan` to a multi-region database cluster."
+name: plan-without-override
+description: This is an extension of the `Basic Plan` template for 1 project, 1 cluster, 1 dbuser, and 1 secure connection. But it added the ability to override the bind db.
 free: true
 apiKey: {{ keyByAlias .credentials "testKey" }}
 project:
@@ -7,31 +7,21 @@ project:
   desc: Created from a template
 cluster:
   name: {{ .instance_name }}
-  clusterType: "REPLICASET"
+  providerBackupEnabled: {{ default "true" .backups }}
   providerSettings:
-    providerName: {{ default "AZURE" .provider }}
+    providerName: {{ default "AWS" .provider }}
     instanceSizeName: {{ default "M10" .instance_size }}
-  replicationSpecs:
-  - numShards: 1
-    zoneName: "Europe"
-    regionsConfig:
-      NORWAY_EAST:
-        analyticsNodes: 0
-        electableNodes: 1
-        priority: 6
-        readOnlyNodes: 0
-      GERMANY_NORTH:
-        analyticsNodes: 0
-        electableNodes: 2
-        priority: 7
-        readOnlyNodes: 0
+    regionName: {{ default "US_EAST_1" .region }}
+  labels:
+    - key: Infrastructure Tool
+      value: MongoDB Atlas Service Broker
 databaseUsers:
 - username: {{ default "test-user" .username }}
   password: {{ default "test-password" .password }}
   databaseName: {{ default "admin" .auth_db }}
   roles:
   - roleName: {{ default "readWrite" .role }}
-    databaseName: {{ default "test" .role_db }}
+    databaseName: {{ default "default" .role_db }}
 ipAccessLists:
 - ipAddress: "0.0.0.0/1"
   comment: "everything"
