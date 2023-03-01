@@ -17,7 +17,7 @@ require (
 	github.com/alexflint/go-arg v1.3.1-0.20200806235247-96c756c382ed
 	github.com/davecgh/go-spew v1.1.1
 	github.com/drewolson/testflight v1.0.0 // indirect
-	github.com/go-git/go-git/v5 v5.4.2
+	github.com/go-git/go-git/v5 v5.6.0
 	github.com/goccy/go-yaml v1.9.8
 	github.com/google/go-querystring v1.1.0
 	github.com/gorilla/mux v1.8.0
